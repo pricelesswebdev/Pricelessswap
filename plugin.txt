@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priceless Swap</title>
+  <script src='https://plugin.jup.ag/plugin-v1.js'></script> data-preload></script>
+  <style>
+
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div id="jup-container"></div>
+      <div id="integrated-terminal">
+        <!-- Jupiter Plugin: Do Not Touch -->
+        <script>
+            window.Jupiter.init({
+                displayMode: "integrated",
+                integratedTargetId: "integrated-terminal",
+                // 👇 REPLACE THIS WITH YOUR OWN HTTP PROVIDER ENDPOINT
+                endpoint: "https://mainnet.helius-rpc.com/?api-key=ba26b64a-dbb4-4743-8abc-874a3e6e4aca", 
+                formProps: {
+                    fixedOutputMint: false,
+                    initialInputMint: "So11111111111111111111111111111111111111112",   // Solana
+                    initialOutputMint: "AFk1RUr18RCFjhKHQN7ufxPBiQYWjXifAw4y4n44jups", // Crumb 
+                }
+            });
+        </script>
+        </div>
+    </div>
+</body>
+</html>
